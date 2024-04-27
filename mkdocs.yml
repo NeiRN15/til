@@ -1,0 +1,38 @@
+site_name: Today I Learned
+repo_name: NeiRN15/til
+repo_url: https://github.com/NeiRN15/til.git
+copyright: © 2024 NeiRN15
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: teal
+    accent: teal
+  features:
+    - navigation.tabs
+    - navigation.instant
+  language: ja
+  custom_dir: overrides
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: iso_date
+extra:
+  search:
+    language: ja
+extra_css:
+  - extra.css
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.keys
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - footnotes
+nav:
+  - README: index.md
+  - Tutorial:
+      - 勉強したことまとめ: Tutorial/index.md
